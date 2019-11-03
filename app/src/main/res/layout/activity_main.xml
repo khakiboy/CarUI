@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Main">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/carbackground"
+        android:background="@drawable/carbackground" />
+    <ImageButton
+        android:id="@+id/rotatebutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotation="50"
+        android:background="@drawable/rotatebut"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+    <ImageButton
+        android:id="@+id/unrotatebutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rotatebut"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:scaleY="-1"
+        android:rotation="55"
+        android:visibility="invisible"/>
+
+</FrameLayout>
